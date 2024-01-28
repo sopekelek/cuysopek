@@ -1,0 +1,268 @@
+:root {
+  --pink: #f14e95
+  --bg: #0a0a0a
+  --shadow: 0 2px 2px rgba(0,0,0,0.5)
+}
+
+body {
+  font-size: 1.2rem;
+  font-family: 'Work Sans', sans-serif;
+}
+
+.hero::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('asset/img/BG-D1.jpg');
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+}
+
+.hero {
+  display: relatif;
+  min-height: 100vh;
+/*   background-color: #0a0a0a; */
+}
+
+.hero h4, .hero h1, .hero p{
+  text-shadow: 0 2px 2px rgba(0,0,0,0.5);
+}
+
+.hero h1 {
+  font-family: 'Sacramento', cursive;
+  font-size: 6rem;
+}
+
+.hero h4 {
+  font-size: 1.6rem;
+}
+
+.hero p {
+  font-size: 1.4rem;
+}
+
+.hero a {
+  color: #f14e95;
+  background-color: white;
+}
+
+.hero a:hover{
+  background-color: #f14e95;
+  color: white;
+}
+
+.mynavbar{
+  margin-top: -4.2px;
+  background-color: rgba(255,255,255,0.3) !important;
+  
+}
+
+.mynavbar .offcanvas{
+  height: 50%;
+}
+
+.mynavbar .navbar-brand, .mynavbar .offcanvas-title {
+  font-family: 'Sacramento', cursive;
+  font-size: 3.2rem;
+  font-weight: bold;
+  color: black;
+}
+
+.mynavbar .nav-link{
+  text-transform: uppercase;
+  color: white;
+}
+
+.home{
+  background-image: url('/asset/img/floral-1.JPG');
+  background-size: cover;
+  min-height: 100vh;
+  margin-top: -6.4rem;
+  padding-top: 15rem;
+  padding-bottom: 5rem;
+}
+
+.home h2, .info h2, .story h2, .galery h2, .rsvp h2{
+  color: #f14e95;
+  font-family: Sacramento;
+  font-size: 5rem;
+  font-weight: bold;
+}
+
+.home h3{
+  color: #444;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.1rem;
+  color: #666;
+}
+
+.home .couple{
+  margin-top: 100px;
+}
+
+.home .couple h3 {
+  font-family: Sacramento;
+  font-size: 2.4rem;
+  color: #f14e95;
+}
+.home .couple img{
+  width: 100%;
+}
+.home .heart{
+  width: 50px;
+  height: 50px;
+  background-color: white;
+  display: flex;
+  border-radius: 50%;
+  box-shadow: 0 0 5px rgba(0,0,0,0.5);
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%) translateY(65px);
+}
+.home .heart i{
+  margin: auto;
+  color: #f14e95;
+}
+
+.info {
+  background-color: #0a0a0a;
+  color: white;
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+}
+
+.info .alamat{
+  font-size: 1rem;
+}
+
+.info .description{
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.info .card{
+  background-color: rgba(255,255,255,0.2) !important;
+  color: white !important;
+  border: 1px solid #999;
+}
+
+.info .card-header{
+  border-bottom: 1px solid #999;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+}
+
+.info .card-body{
+  font-size: 1rem;
+}
+
+.info .card-footer{
+  border-top: 1px solid #999;
+  font-size: 0.9rem;
+  font-weight: 300;
+}
+
+.story, .galery, .rsvp{
+  padding-top: 10rem;
+  padding-bottom: 8rem;
+}
+
+.story span, .galery span{
+  text-transform: uppercase;
+  color: #666;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.story p, .galery p, .rsvp p{
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.galery {
+  background-color: #f5f5f5;
+}
+
+.rsvp {
+  background-color: pink;
+}
+
+.rsvp h2{
+  font-size: 4.5rem;
+}
+.rsvp p {
+  color: white;
+}
+
+
+
+
+
+
+
+
+
+
+/* Media Query */
+/* Xtra Large */
+@media (max-width: 1200px){
+  .home .heart{
+    transform: translateX(-50%) translateY(45px);
+  }
+}
+/* Laptop */
+@media (max-width: 992px){
+  html{
+    font-size: 75%;
+  }
+  .simply-countdown>.simply-section{
+    padding: 70px;
+  }
+  .home .heart{
+    display: none;
+  }
+}
+/* Tablet */
+@media (max-width: 768px){
+  html{
+    font-size: 65%;
+  }
+  .simply-countdown>.simply-section{
+    padding: 60px;
+    margin: 5px;
+  }
+  .mynavbar .nav-link{
+  font-size: 2rem;
+  text-align: center;
+  }
+  .sticky-top{
+    overflow: hidden;
+  }
+}
+/* Mobile Phone */
+@media (max-width: 576px){
+  html{
+    font-size: 60%;
+  }
+  .hero::before{
+  background-image: url('asset/img/8a26bcf97765f7ee3b583e618fb35290.jpg');
+  }
+  .simply-countdown>.simply-section{
+    padding: 45px;
+    margin: 3px;
+  }
+  .mynavbar .nav-link{
+  font-size: 2.5rem;
+  text-align: center;
+  }
+}
